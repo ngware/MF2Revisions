@@ -6,17 +6,35 @@
 //
 
 import SwiftUI
+import SwiftCSV
 
 struct ContentView: View {
+    
+    @State private var viewModel = ViewModel()
+    @State private var answerHidden = true
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("\(viewModel.question)?")
+            
+            Button("Réponse") {
+                answerHidden = !answerHidden
+            }
+            
+            if !answerHidden {
+                Text("\(viewModel.answer)")
+            }
         }
+        .onAppear(perform: viewModel.parseCSV)
         .padding()
     }
+    
+    
+    
+    
 }
 
 #Preview {

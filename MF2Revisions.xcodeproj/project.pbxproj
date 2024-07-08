@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ADF7A62C3C1D5700661413 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 37ADF7A52C3C1D5700661413 /* SwiftCSV */; };
+		37ADF7A82C3C26FE00661413 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADF7A72C3C26FE00661413 /* ViewModel.swift */; };
 		37C3CEEA2C3C19BF00663850 /* MF2RevisionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CEE92C3C19BF00663850 /* MF2RevisionsApp.swift */; };
 		37C3CEEC2C3C19BF00663850 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CEEB2C3C19BF00663850 /* ContentView.swift */; };
 		37C3CEEE2C3C19C100663850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37C3CEED2C3C19C100663850 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		37C3CEFB2C3C19C100663850 /* MF2RevisionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CEFA2C3C19C100663850 /* MF2RevisionsTests.swift */; };
 		37C3CF052C3C19C100663850 /* MF2RevisionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CF042C3C19C100663850 /* MF2RevisionsUITests.swift */; };
 		37C3CF072C3C19C100663850 /* MF2RevisionsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CF062C3C19C100663850 /* MF2RevisionsUITestsLaunchTests.swift */; };
+		37C3CF142C3C1A6500663850 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C3CF132C3C1A6500663850 /* data.swift */; };
+		37C3CF172C3C1B8000663850 /* datamf2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37C3CF162C3C1B8000663850 /* datamf2.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37ADF7A72C3C26FE00661413 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		37C3CEE62C3C19BF00663850 /* MF2Revisions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MF2Revisions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C3CEE92C3C19BF00663850 /* MF2RevisionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MF2RevisionsApp.swift; sourceTree = "<group>"; };
 		37C3CEEB2C3C19BF00663850 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,8 @@
 		37C3CF002C3C19C100663850 /* MF2RevisionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MF2RevisionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C3CF042C3C19C100663850 /* MF2RevisionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MF2RevisionsUITests.swift; sourceTree = "<group>"; };
 		37C3CF062C3C19C100663850 /* MF2RevisionsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MF2RevisionsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37C3CF132C3C1A6500663850 /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		37C3CF162C3C1B8000663850 /* datamf2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = datamf2.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ADF7A62C3C1D5700661413 /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +79,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37ADF7A42C3C1D5700661413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37C3CEDD2C3C19BF00663850 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +93,7 @@
 				37C3CEF92C3C19C100663850 /* MF2RevisionsTests */,
 				37C3CF032C3C19C100663850 /* MF2RevisionsUITests */,
 				37C3CEE72C3C19BF00663850 /* Products */,
+				37ADF7A42C3C1D5700661413 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +110,13 @@
 		37C3CEE82C3C19BF00663850 /* MF2Revisions */ = {
 			isa = PBXGroup;
 			children = (
+				37C3CF162C3C1B8000663850 /* datamf2.csv */,
 				37C3CEE92C3C19BF00663850 /* MF2RevisionsApp.swift */,
 				37C3CEEB2C3C19BF00663850 /* ContentView.swift */,
 				37C3CEED2C3C19C100663850 /* Assets.xcassets */,
 				37C3CEEF2C3C19C100663850 /* Preview Content */,
+				37C3CF132C3C1A6500663850 /* data.swift */,
+				37ADF7A72C3C26FE00661413 /* ViewModel.swift */,
 			);
 			path = MF2Revisions;
 			sourceTree = "<group>";
@@ -143,6 +162,9 @@
 			dependencies = (
 			);
 			name = MF2Revisions;
+			packageProductDependencies = (
+				37ADF7A52C3C1D5700661413 /* SwiftCSV */,
+			);
 			productName = MF2Revisions;
 			productReference = 37C3CEE62C3C19BF00663850 /* MF2Revisions.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 37C3CEDD2C3C19BF00663850;
+			packageReferences = (
+				37C3CF152C3C1B3000663850 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 37C3CEE72C3C19BF00663850 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +258,7 @@
 			files = (
 				37C3CEF12C3C19C100663850 /* Preview Assets.xcassets in Resources */,
 				37C3CEEE2C3C19C100663850 /* Assets.xcassets in Resources */,
+				37C3CF172C3C1B8000663850 /* datamf2.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37C3CEEC2C3C19BF00663850 /* ContentView.swift in Sources */,
+				37C3CF142C3C1A6500663850 /* data.swift in Sources */,
+				37ADF7A82C3C26FE00661413 /* ViewModel.swift in Sources */,
 				37C3CEEA2C3C19BF00663850 /* MF2RevisionsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37C3CF152C3C1B3000663850 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37ADF7A52C3C1D5700661413 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37C3CF152C3C1B3000663850 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37C3CEDE2C3C19BF00663850 /* Project object */;
 }
