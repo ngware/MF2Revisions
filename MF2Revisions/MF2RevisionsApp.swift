@@ -13,8 +13,7 @@ struct MF2RevisionsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            HomeView()
         }
     }
-    
-    
 }
