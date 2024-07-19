@@ -36,12 +36,24 @@ struct CategoriesBrowser: View {
         Text("Choisir une catégorie")
             .font(.custom("Arial Rounded MT Bold", fixedSize: 30))
         HStack {
-            CategoryCard(color: "ffffff", categoryName: "Réglementation", image: "book.pages")
-            CategoryCard(color: "ffffff", categoryName: "Décompression", image: "rectangle.compress.vertical") // lungs
+            NavigationLink(destination: QuestionsView()) {
+                CategoryCard(categoryName: "Réglementation", image: "book.pages")
+            }
+            
+            NavigationLink(destination: QuestionsView()) {
+                CategoryCard(categoryName: "Décompression", image: "rectangle.compress.vertical") // lungs
+            }
+            
         }
         HStack {
-            CategoryCard(color: "ffffff", categoryName: "Anatomie  Physiologie", image: "lungs")
-            CategoryCard(color: "ffffff", categoryName: "Aspects Théoriques", image: "books.vertical")
+            NavigationLink(destination: QuestionsView()) {
+                CategoryCard(categoryName: "Anatomie  Physiologie", image: "lungs")
+            }
+            
+            NavigationLink(destination: QuestionsView()) {
+                CategoryCard(categoryName: "Aspects Théoriques", image: "books.vertical")
+            }
+            
         }
     }
 }
@@ -75,19 +87,21 @@ struct Header: View {
             }
             .padding()
             
-            ScrollView(.horizontal) {
-                HStack(spacing: 15) {
+//            ScrollView(.horizontal) {
+                HStack(spacing: 25) {
                     NavigationLink(destination: QuestionsView()) {
                         ScrollCard(color: "fe6f5f", headline: "Aléatoires", title: "Questions")
                         }
                     
-                        
-                    ScrollCard(color: "3f98fc", headline: "Inédites", title: "Questions")
+                    NavigationLink(destination: QuestionsView()) {
+                        ScrollCard(color: "3f98fc", headline: "Inédites", title: "Questions")
+                    }
+                    
                      
-                    ScrollCard(color: "5ad560", headline: "Difficiles", title: "Questions")
-                        
+//                    ScrollCard(color: "5ad560", headline: "Difficiles", title: "Questions")
+//                        
                 }.padding()
-            }
+//            }
 //            .padding()
             
         }
@@ -96,7 +110,7 @@ struct Header: View {
 
 struct CategoryCard: View {
     
-    var color: String
+    var color: String = "ffffff"
     var categoryName: String
     var image: String
     
@@ -137,7 +151,6 @@ struct ScrollCard: View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color(hex: color))
-            
                 
             VStack {
                 HStack {
@@ -157,7 +170,6 @@ struct ScrollCard: View {
                         .foregroundStyle(.white)
                         Spacer()
                 }
-                
             }
             .padding()
         }

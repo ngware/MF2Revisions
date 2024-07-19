@@ -12,8 +12,8 @@ import SwiftUI
 struct MF2RevisionsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-//            HomeView()
+//            ContentView()
+            HomeView()
         }
     }
 }
