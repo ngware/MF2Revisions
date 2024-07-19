@@ -16,25 +16,29 @@ struct QuestionsView: View {
         ZStack {
             BackgroundView()
             
-            Group {
+            VStack {
+                HStack {
+                    Text("Question n°\(viewModel.questionId): ")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding()
+                    Spacer()
+                }
+                Text("\(viewModel.field) / \(viewModel.theme) / \(viewModel.date) / \(viewModel.city)")
+                    .foregroundStyle(.white)
                 
                 ScrollView {
                     VStack {
                         
-                        Text("Question n°\(viewModel.questionId): ")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.white)
-                        Text("\(viewModel.field) / \(viewModel.theme) / \(viewModel.date) / \(viewModel.city)")
-                            .foregroundStyle(.white)
+                        
             
                         Text("\(viewModel.question)?")
-                            .padding(20)
-                            .background(.blue)
-                            .foregroundColor(.white)
+                            .padding()
+                            .background(.white)
                             .cornerRadius(10)
-                            .foregroundStyle(.white)
-        //                    .clipShape(Capsule())
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .padding(20)
 
                         
                         Button("Réponse") {
@@ -48,21 +52,19 @@ struct QuestionsView: View {
                             .background(.green)
                             .foregroundColor(.white)
                             .cornerRadius(10)
+                            .padding(20)
                             
                             Button("Suivant") {
                                 answerHidden = !answerHidden
                                 viewModel.getNewQuestion()
                             }.buttonStyle(GrowingButton())
                         }
-                    }.padding()
+                    }
                 }
-    //                .frame(width: size.width, height: size.height)
                 .onAppear(perform: viewModel.getNewQuestion)
-                .padding()
-                
             }
+//            .navigationBarHidden(true)
 //            .border(.red)
-            
         }
     }
 }

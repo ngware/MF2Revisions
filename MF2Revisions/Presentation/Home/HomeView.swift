@@ -24,7 +24,8 @@ struct HomeView: View {
             }
             .background(Color(hex: "f8f9fb"))
         }
-        }
+        .accentColor(.white)
+    }
         
 }
 
@@ -73,6 +74,7 @@ struct Header: View {
                         .foregroundStyle(.white)
                     Spacer()
                 }
+                .padding(.top, 20)
                 
                 HStack {
                     Text("MF2")
@@ -118,6 +120,7 @@ struct CategoryCard: View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
                 .fill(Color(hex: color))
+                .shadow(radius: 1, x: 2, y: 4)
             
             
             VStack {
@@ -138,6 +141,7 @@ struct CategoryCard: View {
             .padding()
         }
         .frame(width: 170, height: 200)
+        
     }
 }
 
@@ -174,6 +178,7 @@ struct ScrollCard: View {
             .padding()
         }
         .frame(width: 170, height: 200)
+        .shadow(radius: 1)
     }
 }
 
