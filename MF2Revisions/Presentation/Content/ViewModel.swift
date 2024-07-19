@@ -2,12 +2,11 @@
 //  ViewModel.swift
 //  MF2Revisions
 //
-//  Created by Nicolas Guyot on 08/07/2024.
+//  Created by Nicolas Guyot on 19/07/2024.
 //
 
 import Foundation
 import SwiftCSV
-
 
 extension ContentView {
     @Observable

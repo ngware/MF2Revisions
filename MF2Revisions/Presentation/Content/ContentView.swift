@@ -22,6 +22,7 @@ struct ContentView: View {
                     Text("Question n°\(viewModel.questionId): ")
                         .font(.largeTitle)
                         .fontWeight(.bold)
+                        .padding()
                     Text("\(viewModel.field) / \(viewModel.theme) / \(viewModel.date) / \(viewModel.city)")
         
                     Text("\(viewModel.question)?")
@@ -80,8 +81,6 @@ struct GrowingButton: ButtonStyle {
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
-
-
 
 #Preview {
     ContentView()
