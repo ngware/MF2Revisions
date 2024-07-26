@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37615DA32C51A2CD0011F12D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37615DA22C51A2CD0011F12D /* Launch Screen.storyboard */; };
+		37615DA52C5235B90011F12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37615DA42C5235B90011F12D /* LaunchScreen.storyboard */; };
 		37ADF7A62C3C1D5700661413 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 37ADF7A52C3C1D5700661413 /* SwiftCSV */; };
 		37ADF7A82C3C26FE00661413 /* QuestionsView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADF7A72C3C26FE00661413 /* QuestionsView-ViewModel.swift */; };
 		37ADF7AA2C3C3D5800661413 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ADF7A92C3C3D5800661413 /* CardView.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37615DA22C51A2CD0011F12D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		37615DA42C5235B90011F12D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37ADF7A72C3C26FE00661413 /* QuestionsView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionsView-ViewModel.swift"; sourceTree = "<group>"; };
 		37ADF7A92C3C3D5800661413 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		37ADF7AD2C3C72AF00661413 /* final_info_updated.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = final_info_updated.csv; sourceTree = "<group>"; };
@@ -197,10 +201,12 @@
 				37B78F7B2C4AC9AA0031B376 /* Info.plist */,
 				37C3CEE92C3C19BF00663850 /* MF2RevisionsApp.swift */,
 				37C3CEED2C3C19C100663850 /* Assets.xcassets */,
+				37615DA42C5235B90011F12D /* LaunchScreen.storyboard */,
 				37B78F6F2C4ABE0D0031B376 /* Data */,
 				37B78F702C4ABE4C0031B376 /* Presentation */,
 				37B78F642C4520640031B376 /* Utils */,
 				37C3CEEF2C3C19C100663850 /* Preview Content */,
+				37615DA22C51A2CD0011F12D /* Launch Screen.storyboard */,
 			);
 			path = MF2Revisions;
 			sourceTree = "<group>";
@@ -345,6 +351,8 @@
 				37C3CEF12C3C19C100663850 /* Preview Assets.xcassets in Resources */,
 				37C3CEEE2C3C19C100663850 /* Assets.xcassets in Resources */,
 				37C3CF172C3C1B8000663850 /* datamf2.csv in Resources */,
+				37615DA52C5235B90011F12D /* LaunchScreen.storyboard in Resources */,
+				37615DA32C51A2CD0011F12D /* Launch Screen.storyboard in Resources */,
 				37ADF7AE2C3C72AF00661413 /* final_info_updated.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
