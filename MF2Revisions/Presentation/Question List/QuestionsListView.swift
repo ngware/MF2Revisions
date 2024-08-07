@@ -8,23 +8,53 @@
 import SwiftUI
 
 struct QuestionsListView: View {
-    
+
     @EnvironmentObject var manager: DataManager
     @Environment(\.managedObjectContext) var viewContext
     
-    @FetchRequest(sortDescriptors: []) private var questions: FetchedResults<Question>
+    @FetchRequest(
+        entity: Question.entity(),
+        sortDescriptors: [NSSortDescriptor(keyPath: \Question.id, ascending: true)]
+    ) var questions: FetchedResults<Question>
     
     var body: some View {
-        NavigationView {
-            Text("test")
-            List {
-                ForEach(questions, id: \.self) { question in
-                    Text("test")
-                        .font(.title3)
+        VStack {
+            List(questions) { question in
+                HStack {
+                    Text(String(question.id))
+                        .font(.headline)
+                    Spacer()
+                    Text("Views: \(question.viewCount)")
+                        .font(.subheadline)
                 }
             }
+            
+            if let randomQuestion = questions.randomElement() {
+                HStack {
+                    Text(String(randomQuestion.id))
+                        .font(.headline)
+                    Spacer()
+                    Text("Views: \(randomQuestion.viewCount)")
+                        .font(.subheadline)
+                }
+                Button("Mark as Viewed") {
+                    randomQuestion.viewCount += 1
+                    saveContext()
+                }
+            } else {
+                Text("No questions available")
+            }
         }
-        .navigationTitle("Question List")
+        .padding()
+    }
+    
+    private func saveContext() {
+        do {
+            try viewContext.save()
+        } catch {
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
     }
 }
 
