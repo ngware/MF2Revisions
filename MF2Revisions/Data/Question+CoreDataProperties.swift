@@ -1,8 +1,8 @@
 //
-//  QuestionEntity+CoreDataProperties.swift
+//  Question+CoreDataProperties.swift
 //  MF2Revisions
 //
-//  Created by Nicolas Guyot on 31/07/2024.
+//  Created by Nicolas Guyot on 07/08/2024.
 //
 //
 
@@ -10,10 +10,10 @@ import Foundation
 import CoreData
 
 
-extension QuestionEntity {
+extension Question {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<QuestionEntity> {
-        return NSFetchRequest<QuestionEntity>(entityName: "QuestionEntity")
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Question> {
+        return NSFetchRequest<Question>(entityName: "Question")
     }
 
     @NSManaged public var field: String?
@@ -28,6 +28,6 @@ extension QuestionEntity {
 
 }
 
-extension QuestionEntity : Identifiable {
+extension Question : Identifiable {
 
 }

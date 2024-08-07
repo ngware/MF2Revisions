@@ -10,10 +10,16 @@ import SwiftUI
 
 @main
 struct MF2RevisionsApp: App {
+    
+    @StateObject private var manager : DataManager = DataManager()
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            HomeView()
+//            HomeView()
+            QuestionsListView()
+                .environmentObject(manager)
+                .environment(\.managedObjectContext, manager.container.viewContext)
         }
     }
 }
