@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370FF4412C599DF80019A129 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 370FF43F2C599DF80019A129 /* CoreData.xcdatamodeld */; };
+		370FF4472C599F5C0019A129 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF4462C599F5C0019A129 /* QuestionManager.swift */; };
+		370FF44F2C59A1300019A129 /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF44E2C59A1300019A129 /* CoreDataTests.swift */; };
+		370FF4522C59A1B60019A129 /* QuestionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF4502C59A1B60019A129 /* QuestionEntity+CoreDataClass.swift */; };
+		370FF4532C59A1B60019A129 /* QuestionEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF4512C59A1B60019A129 /* QuestionEntity+CoreDataProperties.swift */; };
+		370FF4552C59A22D0019A129 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF4542C59A22D0019A129 /* CoreDataStack.swift */; };
+		370FF4572C6372930019A129 /* String+CSVRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370FF4562C6372930019A129 /* String+CSVRows.swift */; };
 		37615DA32C51A2CD0011F12D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37615DA22C51A2CD0011F12D /* Launch Screen.storyboard */; };
 		37615DA52C5235B90011F12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37615DA42C5235B90011F12D /* LaunchScreen.storyboard */; };
 		37ADF7A62C3C1D5700661413 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 37ADF7A52C3C1D5700661413 /* SwiftCSV */; };
@@ -49,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370FF4402C599DF80019A129 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		370FF4462C599F5C0019A129 /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
+		370FF44E2C59A1300019A129 /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
+		370FF4502C59A1B60019A129 /* QuestionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		370FF4512C59A1B60019A129 /* QuestionEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		370FF4542C59A22D0019A129 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		370FF4562C6372930019A129 /* String+CSVRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CSVRows.swift"; sourceTree = "<group>"; };
 		37615DA22C51A2CD0011F12D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		37615DA42C5235B90011F12D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37ADF7A72C3C26FE00661413 /* QuestionsView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuestionsView-ViewModel.swift"; sourceTree = "<group>"; };
@@ -113,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				37B78F622C45204F0031B376 /* Color+Hexa.swift */,
+				370FF4562C6372930019A129 /* String+CSVRows.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -122,6 +137,11 @@
 			children = (
 				37ADF7AD2C3C72AF00661413 /* final_info_updated.csv */,
 				37C3CF162C3C1B8000663850 /* datamf2.csv */,
+				370FF43F2C599DF80019A129 /* CoreData.xcdatamodeld */,
+				370FF4462C599F5C0019A129 /* QuestionManager.swift */,
+				370FF4502C59A1B60019A129 /* QuestionEntity+CoreDataClass.swift */,
+				370FF4512C59A1B60019A129 /* QuestionEntity+CoreDataProperties.swift */,
+				370FF4542C59A22D0019A129 /* CoreDataStack.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -223,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				37C3CEFA2C3C19C100663850 /* MF2RevisionsTests.swift */,
+				370FF44E2C59A1300019A129 /* CoreDataTests.swift */,
 			);
 			path = MF2RevisionsTests;
 			sourceTree = "<group>";
@@ -378,11 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370FF4572C6372930019A129 /* String+CSVRows.swift in Sources */,
+				370FF4522C59A1B60019A129 /* QuestionEntity+CoreDataClass.swift in Sources */,
+				370FF4532C59A1B60019A129 /* QuestionEntity+CoreDataProperties.swift in Sources */,
 				37B78F6C2C49508A0031B376 /* BackgroundView.swift in Sources */,
 				37C3CEEC2C3C19BF00663850 /* ContentView.swift in Sources */,
 				37B78F7A2C4AC8A00031B376 /* GrowingButton.swift in Sources */,
 				37B78F6E2C4AB7F00031B376 /* ViewModel.swift in Sources */,
+				370FF4412C599DF80019A129 /* CoreData.xcdatamodeld in Sources */,
+				370FF4552C59A22D0019A129 /* CoreDataStack.swift in Sources */,
 				37B78F632C45204F0031B376 /* Color+Hexa.swift in Sources */,
+				370FF4472C599F5C0019A129 /* QuestionManager.swift in Sources */,
 				37ADF7A82C3C26FE00661413 /* QuestionsView-ViewModel.swift in Sources */,
 				37B78F612C451DC70031B376 /* HomeView.swift in Sources */,
 				37B78F6A2C4950360031B376 /* BackgroundHeaderView.swift in Sources */,
@@ -396,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				370FF44F2C59A1300019A129 /* CoreDataTests.swift in Sources */,
 				37C3CEFB2C3C19C100663850 /* MF2RevisionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,6 +784,20 @@
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		370FF43F2C599DF80019A129 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				370FF4402C599DF80019A129 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 370FF4402C599DF80019A129 /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = /Users/nicolas/Development/Swift/MF2Revisions/MF2Revisions/Data/CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 37C3CEDE2C3C19BF00663850 /* Project object */;
 }
